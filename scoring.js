@@ -8,7 +8,7 @@ $(document).ready(function () {
       let values_from_input = $(".container").find('input')
 
       for (let i=0; i < values_from_input.length;i++){
-          subject_points.push(values_from_input[i].value)
+          subject_points.push(Number(values_from_input[i].value))
       }
 
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
       
 
       for(let i=0;i<subject_points.length;i++){
-          sum+=  parseInt(subject_points[i], 10)
+          sum+=  subject_points[i]
       }
 
       // Output the variable "sum" (total score) to "total score:" (id = "sum_indicate").
@@ -62,7 +62,7 @@ $(document).ready(function () {
       let values_from_input = $(".container").find('input')
 
       for (let i=0; i < values_from_input.length;i++){
-          subject_points.push(values_from_input[i].value)
+          subject_points.push(Number(values_from_input[i].value))
       }
       // Substitute the number of subjects entered in the variable "number".
       let number = subject_points.length;
@@ -119,4 +119,4 @@ $(document).ready(function () {
   // The JavaScript description written here is just a template prepared as a hint, so if you want to implement it without following the written description, you can implement it as you like. If you meet all the pass requirements, you will pass.
   
 
-  declaration
+  
